@@ -14,6 +14,7 @@ const prodConfig = {
   plugins: [
     new ModuleFederationPlugin({
       name: "store",
+      filename: "remoteEntry.js",
       exposes: {
         "./store": "./src/store",
       },

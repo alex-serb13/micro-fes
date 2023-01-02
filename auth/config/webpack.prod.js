@@ -14,6 +14,7 @@ const prodConfig = {
   plugins: [
     new ModuleFederationPlugin({
       name: "auth",
+      filename: "remoteEntry.js",
       remotes: {
         store: `store@${domain}/store/latest/remoteEntry.js`,
       },
