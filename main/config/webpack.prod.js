@@ -20,7 +20,7 @@ const prodConfig = {
       name: "main",
       remotes: {
         auth: `auth@${domain}/auth/latest/remoteEntry.js`,
-        store: `dashboard@${domain}/store/latest/remoteEntry.js`,
+        store: `store@${domain}/store/latest/remoteEntry.js`,
       },
       shared: dependencies,
     }),

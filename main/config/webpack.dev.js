@@ -1,5 +1,4 @@
 const { merge } = require("webpack-merge");
-const { ProvidePlugin } = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const commonConfig = require("./webpack.common");
@@ -24,9 +23,6 @@ const devConfig = {
     port: 8080,
   },
   plugins: [
-    new ProvidePlugin({
-      React: "react", // automatically import react where needed
-    }),
     new ModuleFederationPlugin({
       name: "main",
       remotes: {

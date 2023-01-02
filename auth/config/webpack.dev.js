@@ -1,5 +1,4 @@
 const { merge } = require("webpack-merge");
-const { ProvidePlugin } = require("webpack");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const commonConfig = require("./webpack.common");
 const { dependencies } = require("../package.json");
@@ -23,9 +22,6 @@ const devConfig = {
     port: 8081,
   },
   plugins: [
-    new ProvidePlugin({
-      React: "react", // automatically import react where needed
-    }),
     new ModuleFederationPlugin({
       name: "auth",
       filename: "remoteEntry.js",
