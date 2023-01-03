@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const commonConfig = require("./webpack.common");
 const { dependencies } = require("../package.json");
 
-// Work-around for Uncaught (in promise) TypeError: _emotion_styled__WEBPACK_IMPORTED_MODULE_0__ is not a function
+// Work-around for Uncaught (in promise) TypeError: _emotion_styled__WEBPACK_IMPORTED_MODULE_0__ is not a function and swr
 delete dependencies["@emotion/styled"];
 delete dependencies["swr"];
 
