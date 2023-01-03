@@ -12,6 +12,7 @@ import { DashboardStatistics } from "./components/Dashboard/Statistics";
 import { DashboardClients } from "./components/Dashboard/Clients";
 import { UnderConstruction } from "./components/Dashboard/UnderConstruction";
 const Auth = React.lazy(() => import("./components/AuthApp.js"));
+// import Auth from "./components/AuthApp.js";
 
 import useStore from "store/store";
 
